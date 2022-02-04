@@ -1,0 +1,36 @@
+.header {
+  background: url(../../../img/fondo.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.header__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header img {
+  margin-top: 15rem;
+  height: 26.2rem;
+}
+
+.header p {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  width: 33rem;
+}
+.header span {
+  color: #0295f8;
+}

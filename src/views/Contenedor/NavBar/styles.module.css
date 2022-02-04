@@ -1,0 +1,16 @@
+
+.nav{
+    background:#031220;
+    height: 116px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+
+}
+
+.nav img{
+    height: 10.8rem;
+    margin-left: 1rem;
+}
