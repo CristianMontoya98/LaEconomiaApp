@@ -1,17 +1,12 @@
 
 import './App.css';
 
-
-
-
-
-
-import { Contenedor } from './views/Contenedor';
+import { Container } from './views/Container/container';
 
 function App() {
   return (
     <div className="App">
-      <Contenedor/>
+      <Container/>
     </div>
   );
 }
