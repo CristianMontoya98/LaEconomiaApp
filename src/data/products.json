@@ -1,0 +1,214 @@
+[
+  {
+    "name": "Aguacate Hass",
+    "price": 2000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1ZhEwEEd7IEIyHDIq4sTeDwBEi4axoYWu"
+  },
+  {
+    "name": "Aguacate Papelillo",
+    "price": 3500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1Qii1kE1KAfCxB_HFyw4kRuljRVkQnj-U"
+  },
+  {
+    "name": "Arracacha",
+    "price": 2000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=12el7Nk_PurkMflMzH7dSE-eR_dWZ6y9O"
+  },
+  {
+    "name": "Arveja",
+    "price": 5000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1Vr-AoanwP0r5rxZ04af2U5Vitk3757YE"
+  },
+  {
+    "name": "Banano",
+    "price": 1000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1PwA_8ZJTJ2Syxu40Jmk0fiKWP6HqGSWk"
+  },
+  {
+    "name": "Cebolla larga",
+    "price": 1500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1TCHrzGI0SK9DxrLFSYkniwm8lZVUy2K3"
+  },
+  {
+    "name": "Calabacin",
+    "price": 2000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=17rTYOz7D-npjzSL7VCeTLtRrPjKPZN8_"
+  },
+  {
+    "name": "Calabaza",
+    "price": 1000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1F9ypMFWEFOquZQ9CxyFVT_ontEKA_8Ye"
+  },
+  {
+    "name": "Colisero",
+    "price": 2000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1KA8BRF1i9hHUvDf00b8zyUIn9pCb4bvT"
+  },
+  {
+    "name": "Curuva",
+    "price": 1500,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1wz_HwolP-JDz-Xz3kql7jXyqCwMYMANJ"
+  },
+  {
+    "name": "Durazno",
+    "price": 2000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1ru4lYgY6O9Uxrhr7_dYzZBgAQdyzStFw"
+  },
+  {
+    "name": "Fresa",
+    "price": 2500,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1UJzgd_8HA9Z0VNv9b0NYIDmxPsp9BCgk"
+  },
+  {
+    "name": "Guayaba",
+    "price": 2000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1tcChBcztgyznz1sO3cUJykvDmPuFzlsS"
+  },
+  {
+    "name": "Habichuela",
+    "price": 2500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=167yGv0cOESecwyMMuaimPOO4oI8xnqpU"
+  },
+  {
+    "name": "Lechuga",
+    "price": 1500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1puYXc167DvK5jD6D4a9VtytSpFud6ycj"
+  },
+  {
+    "name": "Limon",
+    "price": 2000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1iifMDF9vhlGL7UHCs1Zmpb5HGgEUJcd0"
+  },
+  {
+    "name": "Lulo",
+    "price": 2000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1RVsWK0d2CXrs923IpVA4ft--kOImyw3U"
+  },
+  {
+    "name": "Mandarina",
+    "price": 1500,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=14_VxZJPiXLp5Qgl7crTv9C_YGh2RRcZR"
+  },
+  {
+    "name": "Mango",
+    "price": 1500,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=19h3_awBNF1zZajYwVGkvIFiqp6CTaJ5c"
+  },
+  {
+    "name": "Manzana",
+    "price": 1500,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=19-kFTOnXWyrAdZ3ZS5I2eWquSNuucgsv"
+  },
+  {
+    "name": "Maracuya",
+    "price": 2000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1u318k-nlYaQMLhJZtdBA8IBjafHf2Az5"
+  },
+  {
+    "name": "Mora",
+    "price": 3000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1vLHE-bqCgoB4feHFD5bR8zxjesW5VgsC"
+  },
+  {
+    "name": "Papa Criolla",
+    "price": 2000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1mQ6T3IO1Xl9g1HcmjVkiDDFCyb6kpV5K"
+  },
+  {
+    "name": "Papa Pastusa",
+    "price": 1500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1vx51HMKW8K7jzLooBiuGZ4zzaIj4iZgK"
+  },
+  {
+    "name": "Papa Sabanera",
+    "price": 1500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=13FNU2gKyjgKbnIYdx_0MjeqKdZnExkJd"
+  },
+  {
+    "name": "Papaya",
+    "price": 1000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1-36ANwkLW9wghP1L7Wf5aA1K14K3E-Hq"
+  },
+  {
+    "name": "Pimenton",
+    "price": 2000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1oEOYPgzuWq648bPKaYZpU6mY_HYD_nXC"
+  },
+  {
+    "name": "Piña",
+    "price": 3000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1KwnErFP72PE1lS-dZUWu_FTM8SgKW1KT"
+  },
+  {
+    "name": "Platano Maduro",
+    "price": 1500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=14XUY5jO5LVNRV0sh47yOyjTnGad1wpZv"
+  },
+  {
+    "name": "Platano Verde",
+    "price": 1500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1Gd8Y3YAZH1BY5_7fPPWnxBYL1C55_rPD"
+  },
+  {
+    "name": "Remolacha",
+    "price": 1000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1SZ4N2vKVkVvtK95h1WdhPuTRZWJSWUlp"
+  },
+  {
+    "name": "Tomate",
+    "price": 1500,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1PmpZlXtukvlU7-NxoJP628vacamEKnCo"
+  },
+  {
+    "name": "Tomate de arbol",
+    "price": 2000,
+    "type":"fruta",
+    "image": "http://drive.google.com/uc?export=view&id=1vgI2b2AwrBgWiUUXmJUxG13oh5Q6Yh-C"
+  },
+  {
+    "name": "Yuca",
+    "price": 1300,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1Zh4Eq_rHV7dx7lN8nWn4heQQF8FDL2IT"
+  },
+  {
+    "name": "Zanahoria",
+    "price": 1000,
+    "type":"verdura",
+    "image": "http://drive.google.com/uc?export=view&id=1-58PJq2jWrjc3gtEcK9WOQv3i6edTPEP"
+  }
+
+
+]

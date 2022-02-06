@@ -5,6 +5,7 @@ import { Button } from "../Button/button";
 function Header() {
   return (
     <div className={styles.header}>
+      
       <div className={styles.header__filter}>
         <img src={logo} alt="" />
         <p>
