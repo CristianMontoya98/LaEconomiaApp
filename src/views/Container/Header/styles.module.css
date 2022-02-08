@@ -34,3 +34,9 @@
 .header span {
   color: #0295f8;
 }
+
+.header svg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
