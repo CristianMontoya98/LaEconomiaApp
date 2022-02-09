@@ -14,7 +14,8 @@ function Header() {
             <span> 5 años</span> de acreditación, ofrecemos productos de
             excelente calidad al mejor precio.
           </p>
-          <Button icon={<i className="fas fa-angle-down"></i>} text="Ver productos" btn={true}/>
+          
+          {<Button icon={<i className="fas fa-angle-down"></i>} text="Ver productos" />}
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-
+import { Link } from 'react-router-dom';
 function ItemsMenu(props) {
   const { show } = props;
 
@@ -7,13 +7,13 @@ function ItemsMenu(props) {
     <div className={`${styles.menu} ${show ? styles.show : styles.hide}`}>
       <ul className={styles.menu__elements}>
         <li>
-          <i className="fas fa-home"></i> Inicio
+          <Link to="/products"><i className="fas fa-home"></i> Inicio</Link>
         </li>
         <li>
-          <i className="fas fa-boxes"></i> Productos
+          <Link to="/products"><i className="fas fa-boxes"></i> Productos</Link>
         </li>
         <li>
-          <i className="fas fa-shopping-cart"></i> Carrito
+          <Link to="/cart"><i className="fas fa-shopping-cart"></i> Carrito</Link>
         </li>
       </ul>
     </div>

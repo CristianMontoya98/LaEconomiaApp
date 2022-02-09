@@ -3,24 +3,11 @@
   font-weight: 700;
   border-radius: 2rem;
   border: none;
-}
-.button__btn {
   color: var(--blue2);
-  width: auto;
+  z-index: 2;
   height: 6.3rem;
   padding-left:2rem;
   padding-right:2rem;
   background-color: var(--blue3);
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.89);
-}
-button:hover{
-    cursor: pointer;
-}
-.button__tag {
-  color: var(--white);
-  background-color: var(--blue0);
-  width: 16rem;
-  height: 6rem;
-  margin: 1rem;
-  box-shadow: 0.5rem 0.5rem 1rem 0.3rem rgba(2, 13, 35, 0.92);
 }

@@ -3,21 +3,25 @@ import styles from "./styles.module.css";
 import { useState } from "react";
 import { Card } from "./components/Card/card";
 import data from "../../../data/products.json";
-
-function Products() {
+import { CartButton } from "./components/CartButton/cartButton";
+import { Link } from 'react-router-dom';
+function Products(props) {
+  const {obj} = props
+  const [filterData, setFilterData] = useState(data);
   const [searchText, setSearchText] = useState("");
-  const handleSearch = ({ target: { value } }) => setSearchText(value);
-  const [filterData, setFilterData] = useState([]);
-  const [isFiltered, setIsFiltered] = useState(false);
-  const filter = (type) => {
 
-    setIsFiltered(true);
+  const category = (text) => {
+    setSearchText(text);
+  }
+  const filter = (type) => {
     setFilterData(
       data.filter((val) => {
-        return (val.type.toLowerCase().includes(type.toLowerCase())|| val.name.toLowerCase().includes(type.toLowerCase()));
+        
+        return (val.type.toLowerCase().includes(type.toLowerCase()) || val.name.toLowerCase().includes(type.toLowerCase()));
       })
     );
   };
+  
   return (
     <div className={styles.products}>
       <div className={styles.products__title}>
@@ -25,30 +29,22 @@ function Products() {
         <h1>PRODUCTOS</h1>
         <div className={styles.products__titleLine}></div>
       </div>
-      <SearchBox
-        searchText={searchText}
-        search={handleSearch}
-        onFilter={filter}
-      />
+      <SearchBox onFilter={filter} setSearch={setSearchText} category={category}/>
+      <p>{filterData.length === 0 && <>No hay resultados para la busqueda: <span>{searchText}</span></>}
+      {(searchText.length > 0 && filterData.length > 0) && <>Filtrado por: <span>{searchText}</span></>  }
+      </p>
       <div className={styles.cards}>
-        {isFiltered
-          ? filterData.map((value, index) => (
+        {filterData.map((value, index) => (
               <Card
-                key={index}
-                name={value.name}
-                price={value.price}
-                image={value.image}
-              />
-            ))
-          : data?.map((value, index) => (
-              <Card
-                key={index}
-                name={value.name}
-                price={value.price}
-                image={value.image}
+            key={index}
+            name={value.name}
+            price={value.price}
+            image={value.image}
+            obj={obj}
               />
             ))}
       </div>
+      <Link to="/cart"><CartButton/></Link>
     </div>
   );
 }

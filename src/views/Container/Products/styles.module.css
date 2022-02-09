@@ -35,3 +35,14 @@ justify-content:space-evenly;
     max-width: 1300px;
     align-self: center;
 }
+.products p{
+    color: var(--white);
+    font-size: 1.7rem;
+    text-align: center;
+    width: 18rem;
+    align-self: center;
+}
+.products span:nth-child(1){
+    font-style: italic;
+    font-weight: 700;
+}
