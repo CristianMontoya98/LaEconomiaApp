@@ -31,8 +31,10 @@ function Card(props) {
 
  /*Function to decrement the amount of the product */
   const decrement = () => {
-    if (cont > 1) { setCont(cont - 1); }
-    if(verifyParent){setTotalFinal((totalFinal)=>totalFinal - price)}
+    if (cont > 1) {
+      setCont(cont - 1);
+      if (verifyParent) { setTotalFinal((totalFinal) => totalFinal - price) }
+       }
   };
 
   return (
