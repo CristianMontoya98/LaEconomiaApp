@@ -12,7 +12,7 @@ function Cart(props) {
   const [addressDom, setAddressDom] = useState("");
   const handleTextName = ({ target: { value } }) => setNameDom(value);
   const handleTextAddress = ({ target: { value } }) => setAddressDom(value);
-  let message = "Holis";
+  let message = "";
   let ref = "";
   /* Function to delete a product in the cart */
   const removeProductInCart = (object) => {
@@ -34,9 +34,11 @@ function Cart(props) {
     setTotalFinal(totalF);
   },[list])
   
+  
+  
 
-
-  ref = `https://api.whatsapp.com/send?phone=+573023194184&text=${message}`;
+  list.forEach((element) => {message += `${element.name}: ${element.quantity} libras $${element.total}%0A`});
+  ref = `https://api.whatsapp.com/send?phone=+573155299982&text=Nombre: ${nameDom}%0A Direccion: ${addressDom}%0A ${message}%0A Total a pagar: $${totalFinal}`;
 
   return (
     <section className={styles.cart}>
@@ -47,7 +49,7 @@ function Cart(props) {
       </div>
       <h2>Tu pedido</h2>
       <div className={styles.cart__cards}>
-        {list.map((value, index) => (
+        {list?.map((value, index) => (
               <Card
             key={index}
             name={value.name}
@@ -62,7 +64,6 @@ function Cart(props) {
             click={removeProductInCart}
             
           />
-         
             ))}
       </div>
       <div className={styles.cart__title}>
@@ -72,18 +73,15 @@ function Cart(props) {
       </div>
       <h3>${totalFinal}</h3>
       <div className={styles.cart__infoDom}>
-      <h2>Direccion</h2>
+      <h2>Direccion *</h2>
       <input type="text" value={addressDom} onChange={handleTextAddress} placeholder='Digita tu dirección'/>
-      <h2>Nombre</h2>
+      <h2>Nombre *</h2>
         <input type="text"  value={nameDom} onChange={handleTextName} placeholder='Digita tu nombre' />
         <div className={styles.cart__infoDomButtons}>
-          <div className={styles.separate}>
-
-            <a href={ref} target="_blank" rel="noreferrer"><button><i className="fas fa-truck"></i>Comprar</button></a>
-          </div>
-          <div className={styles.separate}>
-            <Link to="/products"><button><i className="fas fa-arrow-alt-circle-left" ></i>Regresar</button></Link>
-            </div>
+          <a href={ref} target="_blank" rel="noreferrer" className={(nameDom.length === 0 || addressDom.length === 0) && styles.disabled}>
+            <button className={`${styles.button} ${(nameDom.length === 0 || addressDom.length === 0) && styles.btnDisabled} `}>
+              <i className="fas fa-truck"></i>Comprar</button></a>
+            <Link to="/products"><button className={styles.button}><i className="fas fa-arrow-alt-circle-left" ></i>Regresar</button></Link>
           </div>
       </div>    
     </section>

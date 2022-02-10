@@ -18,8 +18,8 @@ function Container() {
       <Header/>
       
       <Routes>
-          <Route path="/" element={<Products obj={setData} amount={data.length}/>} />
-        <Route path="/products" element={<Products  obj={setData} amount={data.length}/>} />
+          <Route path="/" element={<Products list={data} setList={setData} amount={data.length}/>} />
+        <Route path="/products" element={<Products  list={data} setList={setData} amount={data.length}/>} />
           <Route path="/cart" element={<Cart list={data} setList={setData}/>}/>
       </Routes>
       

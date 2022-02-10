@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 /* Products component, structure of the products section */
 
 function Products(props) {
-  const { obj, amount } = props;
+  const { list, setList, amount } = props;
   const [filterData, setFilterData] = useState(data);
   const [searchText, setSearchText] = useState("");
 
@@ -30,12 +30,21 @@ function Products(props) {
     );
   };
 
+  /*Function to set the array of products in the cart */
+  const correctProduct = (aux) => {
+    setList((prev) => [...prev, aux]);
+    alert(`Producto ${aux.name} agregado correctamente`);
+  }
+
   /*Function to add the object in the list of the cart */
-  const addProductToCart=(aux)=>{
-    obj((prev)=>[...prev, aux]);
+  const addProductToCart = (aux) => {
+    
+    let filterObject = list.filter(element => element.name === aux.name);
+    filterObject.length === 0 ? correctProduct(aux) : alert(`Ya existe ${aux.name}` )
+
   }
   
-  return (
+  return ( 
     <section className={styles.products}>
       <div className={styles.products__title}>
         <div className={styles.products__titleLine}></div>
@@ -53,7 +62,6 @@ function Products(props) {
             name={value.name}
             price={value.price}
             image={value.image}
-            
             iconBtn={<i className="fas fa-cart-plus"></i>}
             textBtnCard="Añadir al carrito"
             click={addProductToCart}

@@ -13,7 +13,9 @@ function Card(props) {
     name: name,
     price: price,
     image: image,
-    quantity:cont
+    quantity:cont,
+      total: totalProduct,
+
   }
 
   useEffect(() => {
