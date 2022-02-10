@@ -36,7 +36,7 @@ function Cart(props) {
   
   
   
-
+  
   list.forEach((element) => {message += `${element.name}: ${element.quantity} libras $${element.total}%0A`});
   ref = `https://api.whatsapp.com/send?phone=+573155299982&text=Nombre: ${nameDom}%0A Direccion: ${addressDom}%0A ${message}%0A Total a pagar: $${totalFinal}`;
 
@@ -62,7 +62,8 @@ function Cart(props) {
             band={true}
             totalVal={value.quantity * value.price}
             click={removeProductInCart}
-            
+            setTotalFinal={setTotalFinal}
+            verifyParent={true}
           />
             ))}
       </div>
@@ -78,8 +79,8 @@ function Cart(props) {
       <h2>Nombre *</h2>
         <input type="text"  value={nameDom} onChange={handleTextName} placeholder='Digita tu nombre' />
         <div className={styles.cart__infoDomButtons}>
-          <a href={ref} target="_blank" rel="noreferrer" className={(nameDom.length === 0 || addressDom.length === 0) && styles.disabled}>
-            <button className={`${styles.button} ${(nameDom.length === 0 || addressDom.length === 0) && styles.btnDisabled} `}>
+          <a href={ref} target="_blank" rel="noreferrer" className={(nameDom.length === 0 || addressDom.length === 0) ? styles.disabled:""}>
+            <button className={`${styles.button} ${(nameDom.length === 0 || addressDom.length === 0) ? styles.btnDisabled:""} `}>
               <i className="fas fa-truck"></i>Comprar</button></a>
             <Link to="/products"><button className={styles.button}><i className="fas fa-arrow-alt-circle-left" ></i>Regresar</button></Link>
           </div>

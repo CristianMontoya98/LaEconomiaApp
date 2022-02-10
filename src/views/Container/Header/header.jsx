@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 import logo from "../../../img/logo.svg";
-import { Button } from "../Button/button";
+import { Link } from "react-router-dom";
 
 /* Header component, structure of the header, is used only one time */
 function Header() {
@@ -16,7 +16,7 @@ function Header() {
             excelente calidad al mejor precio.
           </p>
           
-          {<Button icon={<i className="fas fa-angle-down"></i>} text="Ver productos" />}
+          {<Link to="/products"><button className={styles.seeButton}><i className="fas fa-angle-down"></i>Ver productos</button></Link>}
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

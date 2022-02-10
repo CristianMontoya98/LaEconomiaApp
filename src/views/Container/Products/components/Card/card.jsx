@@ -4,7 +4,7 @@ import { Button } from "../../../Button/button";
 import styles from "./styles.module.css";
 /* Card component, structure of the cards */
 function Card(props) {
-  const { name, image, price,  iconBtn,textBtnCard, amount,amountVal, band, totalVal, click} = props;
+  const { name, image, price,  iconBtn,textBtnCard, amount,amountVal, band, totalVal, click, setTotalFinal, verifyParent} = props;
   const [cont, setCont] = useState(band ? amountVal : 1);
   const [totalProduct, setTotalProduct] = useState(totalVal);
   
@@ -14,7 +14,7 @@ function Card(props) {
     price: price,
     image: image,
     quantity:cont,
-      total: totalProduct,
+    total: totalProduct,
 
   }
 
@@ -25,11 +25,14 @@ function Card(props) {
   /*Function to increment the amount of the product */
   const increment = () => {
     setCont(cont + 1);
+    if(verifyParent){setTotalFinal((totalFinal)=>totalFinal + price);}
+    
   };
 
  /*Function to decrement the amount of the product */
   const decrement = () => {
-    if (cont > 1) setCont(cont - 1);
+    if (cont > 1) { setCont(cont - 1); }
+    if(verifyParent){setTotalFinal((totalFinal)=>totalFinal - price)}
   };
 
   return (
@@ -48,7 +51,7 @@ function Card(props) {
               <i className="fas fa-minus"></i>
             </button>
             <h2>{cont}</h2>
-            <button onClick={() => { increment() }}>
+            <button onClick={() => { increment(); }}>
               <i className="fas fa-plus"></i>
             </button>
           </span>

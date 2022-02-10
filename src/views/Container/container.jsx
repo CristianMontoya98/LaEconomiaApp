@@ -8,6 +8,7 @@ import { Footer } from "./Footer/footer";
 
 /* Container component, structure of the general container
 the routes are defined here because are just 3 */
+
 function Container() {
   const [data, setData] = useState([]);
 

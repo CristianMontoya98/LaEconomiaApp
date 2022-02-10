@@ -65,6 +65,7 @@ function Products(props) {
             iconBtn={<i className="fas fa-cart-plus"></i>}
             textBtnCard="Añadir al carrito"
             click={addProductToCart}
+            verifyParent={false}
               />
             ))}
       </div>
