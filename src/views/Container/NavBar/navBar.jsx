@@ -8,23 +8,24 @@ function NavBar(props) {
 
   const [toggle,setToggle]  = useState(false);
 
-  /* Function to change the state of the toggle state variable,
-     */
+  /* Function to change the state of the toggle state variable */
   const handleClickMenu = () => {
     setToggle(!toggle);
   };
+  const handleClickItem = () => {
+    setToggle(false);
+  };
 
   return (
-    <>
+    
       <nav className={styles.nav}>
           <div className={styles.nav__top}>
           <img src={logo} alt="" />
           <ButtonMenu handleClickMenu={handleClickMenu} iconActive={toggle ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ItemsMenu show={toggle}/>
-        
+      <ItemsMenu show={toggle} handleClickItem={handleClickItem}/>
       </nav>
-    </>
+    
   );
 }
 

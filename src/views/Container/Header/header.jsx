@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import logo from "../../../img/logo.svg";
 import { Button } from "../Button/button";
 
+/* Header component, structure of the header, is used only one time */
 function Header() {
   
   return (

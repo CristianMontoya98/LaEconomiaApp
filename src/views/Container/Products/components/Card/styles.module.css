@@ -12,17 +12,23 @@
     width: 37.5rem;
     
 }
+
 .card__title{
     font-size: 3rem;
     text-align: center;
 }
 
+
 .card__product{
     display: flex;
+    margin-bottom: 1rem;
 }
 
 .card__product h2{
     font-size: 2.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .card__productImage{
@@ -47,7 +53,7 @@
     justify-content: center;
 }
 
-.card__productText h2:nth-child(2n){
+.card__productText span > h2{
     
     background: var(--white);
     color: var(--blue1);
@@ -68,6 +74,7 @@
 
     
 }
+
 @media (min-width:750px){
     .card{
         margin: 1rem;

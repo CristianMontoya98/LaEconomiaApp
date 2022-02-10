@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+/* Component that defines the structure of the diferent buttons with dinamic values */
 function Button(props) {
   const { icon, text, click } = props;
   /*  */
@@ -7,7 +8,7 @@ function Button(props) {
     <>
       <button
         className={styles.button}
-        onClick={click}
+        onClick={()=>click()}
       >{icon} {text} </button>
     </>
   );
