@@ -16,12 +16,14 @@
     right: 2vw;
     z-index: 4;
     box-shadow: 1rem 1rem 2rem 0.2rem rgba(0, 0, 0, 0.89);
+    transition: all ease-in 0.3s;
 }
 .btnCart > span{
     padding-right: 0.2rem;
     position: absolute;
     background: var(--white);
     border: 3px solid var(--blue3);
+    color:var(--blue1);
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -30,4 +32,13 @@
     font-style: normal;
     top:-1.9rem;
     left: -1.2rem;
+}
+
+@media (min-width:900px){
+    .btnCart:hover{
+        cursor: pointer;
+        background: var(--blue1);
+        color: var(--blue3);
+        border: 5px solid var(--blue3);
+    }
 }

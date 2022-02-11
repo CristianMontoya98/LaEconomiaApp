@@ -71,7 +71,7 @@
     width: 4rem;
     font-size: 2rem;
     font-weight: 700;
-
+    transition: all ease 0.3s;
     
 }
 
@@ -86,3 +86,14 @@
             border-radius: 1.5rem;
         }
         }
+@media (min-width:900px){
+    .card__productText button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        background:var(--blue2);
+        color: var(--white);
+    }
+    .card__productText button:active{
+        transform: scale(0.9);
+    }
+}

@@ -35,3 +35,10 @@
     text-decoration: none;
     color: var(--blue3);
 }
+
+@media(min-width:900px){
+    .menu__elements li a:hover{
+        text-decoration: line-through;
+        color: var(--white);
+    }
+}

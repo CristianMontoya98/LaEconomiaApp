@@ -10,4 +10,18 @@
   padding-right:2rem;
   background-color: var(--blue3);
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.89);
+  transition: all ease 0.3s;
+}
+@media(min-width:900px){
+.button:hover{
+  background-color: var(--blue2);
+  color: var(--white);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.button:active{
+  background-color: var(--blue1);
+  color: var(--white);
+  transform: scale(0.9);
+}
 }

@@ -29,7 +29,8 @@
     border: none;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem 0.3rem rgba(0, 9, 19, 0.952);
-}
+  transition: all ease 0.3s;
+  }
 
 .filters{
     margin-top: 3rem;
@@ -55,4 +56,16 @@
 .filters__active{
   color: var(--blue0);
   background-color: var(--white);
+}
+@media(min-width:900px){
+  .search button:hover{
+    cursor: pointer;
+    background: var(--blue1);
+    color: var(--blue3);
+    transform: scale(1.2);
+  }
+  .filters__tag:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }

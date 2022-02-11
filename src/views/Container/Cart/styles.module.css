@@ -87,6 +87,7 @@ margin-top: 5rem;
   background-color: var(--blue3);
   box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.89);
   margin: 0.5rem;
+  transition: all ease 0.3s;
 }
 .disabled{
   pointer-events: none;
@@ -94,4 +95,18 @@ margin-top: 5rem;
 }
 .btnDisabled{
     opacity: 0.6;
+}
+@media(min-width:900px){
+    .button{
+        margin: 1rem;
+    }
+    .button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        background:var(--blue1);
+        color: var(--blue3);
+    }
+    .button:active{
+        transform: scale(0.9);
+    }
 }

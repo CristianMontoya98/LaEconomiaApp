@@ -40,7 +40,7 @@ function Products(props) {
   const addProductToCart = (aux) => {
     
     let filterObject = list.filter(element => element.name === aux.name);
-    filterObject.length === 0 ? correctProduct(aux) : alert(`Ya existe ${aux.name}` )
+    filterObject.length === 0 ? correctProduct(aux) : alert(`Ya agregaste este producto ${aux.name}` )
 
   }
   
