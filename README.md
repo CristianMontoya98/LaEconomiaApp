@@ -1,3 +1,8 @@
+# About this project
+This project is the e commerce app of a local of fruits and vegetables, in the app the users can do their shopping process and subsequently recieve the products in their houses,
+the folder structure is based on atomic design to have a better view of all the components in there.
+Deploy build on netlify: https://minifruverlaeconomia.netlify.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
