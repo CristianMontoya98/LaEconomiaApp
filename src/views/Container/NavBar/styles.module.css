@@ -17,3 +17,9 @@
   height: 10.8rem;
   margin-left: 1rem;
 }
+
+@media(min-width:900px){
+  .nav__top {
+    width: 20rem;
+  }
+}

@@ -49,9 +49,7 @@ function SearchBox(props) {
 
       <div className={styles.filters}>
         <button
-          className={`${styles.filters__tag} ${
-            active ? styles.filters__unActive : styles.filters__active
-          }`}
+          className={`${styles.filters__tag} ${active ? styles.filters__unActive : styles.filters__active}`}
           onClick={() => {
             onFilter("fruta");
             changeClass(1);
